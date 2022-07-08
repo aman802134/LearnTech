@@ -361,11 +361,10 @@ body
 #contact h1
 {
     font-family: "ubuntu",sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
     letter-spacing: 2px;
     margin: 5px 0;
-    color:limegreen;
     margin-bottom: 20px;
 }
 

@@ -352,9 +352,63 @@
 /* from 450px */
 @media screen and (max-width:450px) 
 {
-    #contact h1
+    .hero-section h1
+    {
+        font-size: 17px;
+        margin: 5px 0;
+    }
+    .hero-section p
+    {
+        font-size: 8px;
+    }
+    .button
+    {
+        margin: 30px 0;
+    }
+    .button a
+    {
+        padding: 7px 25px;
+        font-size: 12px;
+    }
+    #features
+    {
+        padding: 20vw 8vw 0 8vw;
+    }
+    #features h1
+    {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+    #features p
+    {
+        font-size: 10px;
+    }
+    /* courses section code is from here */
+    #courses
+    {
+        padding: 20vw 6vw 0 6vw;
+        text-align: center;
+    }
+    #courses h1
     {
         font-size: 20px;
+    }
+    #courses p
+    {
+        font-size: 10px;
+    }
+    .course-btn-container a
+    {
+        font-size: 14px;
+    }
+    /* contact secotion code */
+    #contact
+    {
+        padding: 20vw 8vw 0 8vw;
+    }
+    #contact h1
+    {
+        font-size: 18px;
     }
     .message-area
     {
@@ -364,30 +418,45 @@
     {
         font-size: 14px;
     }
+    .message-area>.input-area>label>input
+    {
+        width: 60%;
+        font-size: 12px;
+    }
     .contact-info h4
     {
-        font-size: 14px;
+        font-size: 12px;
     }
     .email-info h3
     {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .email-info>span
+    {
+        font-size: 10px;
+        letter-spacing: 0;
     }
     .call-info h3
     {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .call-info>span
+    {
+        font-size: 10px;
+        letter-spacing: 0;
     }
     .social-media a
     {
-        margin: 0 5px;
+        display: none;
     }
+    /* .footer-navigation-links>ul>li
+    {
+    } */
     .footer-title>.footer-logo
     {
         font-size: 18px;
         font-weight: 600;
     } 
-    /* .footer-navigation-links>ul>li
-    {
-    } */
     .footer-navigation-links>ul>li>a
     {
         font-size: 12px;
