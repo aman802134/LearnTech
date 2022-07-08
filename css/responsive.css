@@ -348,3 +348,56 @@
      /* FAQ section code */
     
 }
+
+/* from 450px */
+@media screen and (max-width:450px) 
+{
+    #contact h1
+    {
+        font-size: 20px;
+    }
+    .message-area
+    {
+        padding: 5px 10px;
+    }
+    .message-area h4
+    {
+        font-size: 14px;
+    }
+    .contact-info h4
+    {
+        font-size: 14px;
+    }
+    .email-info h3
+    {
+        font-size: 14px;
+    }
+    .call-info h3
+    {
+        font-size: 14px;
+    }
+    .social-media a
+    {
+        margin: 0 5px;
+    }
+    .footer-title>.footer-logo
+    {
+        font-size: 18px;
+        font-weight: 600;
+    } 
+    /* .footer-navigation-links>ul>li
+    {
+    } */
+    .footer-navigation-links>ul>li>a
+    {
+        font-size: 12px;
+    }
+    .policy>ul>li>a
+    {
+        font-size: 12px;
+    }
+    .footer-social_media>a>i
+    {
+        font-size: 1rem;
+    }
+}
