@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&family=Ubuntu:wght@300;400;500&display=swap');
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+ */
+*
+{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+ /* navbar code is from here */
+.header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0px 0px 8px 2px rgb(175 10 123 / 14%);
+}
+.header>.logo
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+.header>.logo>.span-1
+{
+    color: rgb(149, 56, 72);
+    letter-spacing: 1px;
+}
+.header>.logo>.span-2
+{
+    color: rgb(182, 59, 151);
+}
+
+.navbar ul
+{
+    display: flex;
+    padding: 0 15px;
+}
+.navbar ul li
+{
+    margin: 0 25px;
+}
+.navbar ul li a
+{
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: rgb(99, 28, 85);
+    transition: all 0.5s;
+}
+.navbar ul li a:hover
+{
+    color: rgb(181, 107, 171);
+}
+.bars
+{
+    display: none;
+}
+.bars i
+{
+    font-size: 2rem;
+}
+/* navbar code end here */
+
+/* hero section code is from here */
+.hero-section
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    background: linear-gradient(rgba(9,5,54,0.7),rgba(5,4,46,0.7)),url(/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section h1
+{
+    font-family: "ubuntu",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.hero-section p
+{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color:#fff;
+    margin-top: 15px;
+}
+.button
+{
+    margin: 30px 0;
+}
+.button a
+{
+    padding: 10px 35px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.button a.home_first-btn
+{
+    background-color: rgb(149, 56, 72);
+    color: #fff;
+    transition: all 0.5s;
+}
+.button a.home_first-btn:hover
+{
+    color: rgb(149, 56, 72);
+    background-color: #fff;
+}
+.button a.home_second-btn
+{
+    color: #fff;
+    background-color: rgb(142, 46, 118);
+    transition: all 0.5s;
+}
+.button a.home_second-btn:hover
+{
+    color: rgb(142, 46, 118);
+    background-color: #fff;
+}
+/* hero section code end here */
+/* feature section code is from here */
+#features
+{
+    padding: 4vw 8vw 0 8vw;
+    text-align: center;
+    box-shadow: 0px 0px 10px -2px rgba(142, 46, 118, 0.449);
+}
+#features h1
+{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+#features p
+{
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(0, 0, 0,0.5);
+}
+#features .fea-base
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 40px;
+}
+#features .fea-box
+{
+    background-color: rgb(239, 228, 238);
+    text-align: start;
+    margin: 40px 0;
+    border-radius: 4px;
+    padding: 0px 0px 15px 15px;
+    transition: all 0.4s;
+}
+#features .fea-box:hover
+{
+    box-shadow: 0px 0px 10px 8px rgb(224, 188, 213);
+}
+#features .fea-box img
+{   
+    width: 40px;
+    margin: 10px 0;
+}
+#features .fea-box h3
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    padding: 10px 0;
+}
+#features .fea-box p
+{
+   font-size: 1rem; 
+   font-weight: 400;
+}
+/* feature section code ends here */
+
+/* courses section code is from here */
+#courses
+{
+    padding: 4vw 6vw 0 6vw;
+    text-align: center;
+}
+#courses h1
+{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+#courses p
+{
+    font-family: "ubuntu",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(0, 0, 0,0.5);
+}
+#courses>.courses-base
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 40px;
+}
+#courses>.courses-base>.course-box
+{
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.4);
+    transition: all 0.4s;
+}
+#courses>.courses-base>.course-box:hover
+{
+    box-shadow: 1px 1px 40px -1px rgba(0,0,0,0.4);
+}
+.course-box>img
+{
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.course-detail
+{
+    margin: 10px 0;
+    text-align: start;
+    padding: 10px 20px;
+}
+.course-detail h3
+{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.course-btn-container
+{
+    margin: 40px 0;
+}
+.course-btn-container a
+{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.course-btn-container a.course-btn
+{
+    
+    background-color: rgb(149, 56, 72);
+    color: #fff;
+    transition: all 0.5s;
+}
+.course-btn-container a.course-btn:hover
+{
+    color: rgb(149, 56, 72);
+    background-color: #fff;
+}
+/* courses section code ends here */
+
+/* FAQ code section is from here */
+#FAQ-section
+{
+    padding: 2vw 0 8vw 2vw;
+    text-align: center;
+}
+#FAQ-section>.FAQ-title
+{
+    margin: 10px 0;
+}
+#FAQ-section>.FAQ-title h1
+{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    color: rgba(0, 0, 0,0.9);
+}
+#FAQ-section>.FAQ-title p
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0,0.5);
+}
+.FAQ-area
+{
+    margin: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 40px;
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0,0.5);
+    padding: 40px 40px;
+}
+.FAQ-area>.FAQ h3 
+{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.FAQ-area>.FAQ p 
+{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0, 0, 0,0.8);
+    letter-spacing: 1px;
+}
+/* FAQ code section ends here */
+
+
+/* contact section code is from here */
+#contact
+{
+    padding: 4vw 8vw 0 8vw;
+    text-align: center;
+}
+#contact h1
+{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    color: rgba(0, 0, 0,0.9);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form
+{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgba(142, 46, 118, 0.449);
+}
+/* message area */
+.message-area
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 5px 40px;
+    text-align: start;
+}
+.message-area h4
+{
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: "Poppins",serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.message-area>.input-area
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.message-area>.input-area>label
+{
+    padding: 30px 0;
+    width: 100%;
+}
+.message-area>.input-area>label>input
+{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    font-family: "Poppins",serif;
+    color: #fff;
+    transition: all 0.4s;
+}
+.message-area>.input-area>label>input:focus
+{
+    border-bottom: 1px solid #fff;
+}
+.message-area>.input-area>label>textarea
+{
+    outline: none;
+    border: 1px solid black;
+}
+.message-area>.input-area>.button
+{
+    margin: 40px 0;
+}
+.message-area>.input-area>.button>a
+{
+    padding: 10px 150px;
+    font-size: 20px;
+    font-family: "Poppins",serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(142, 46, 118);
+    color: #fff;
+}
+/* message area */
+/* contact area */
+.contact-info
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0; 
+    height: 100%;   
+}
+.contact-info h4
+{
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: "Poppins",serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.email-info
+{
+    margin: 70px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.email-info h3
+{
+    font-size: 24px;
+    font-family: "Poppins",serif;
+    margin-bottom: 10px;
+}
+.email-info>span
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Poppins",serif;
+}
+.call-info
+{
+    margin: 60px 0 30px 0; 
+    display: flex;
+    flex-direction: column;
+}
+.call-info h3
+{
+    font-size: 24px;
+    font-family: "Poppins",serif;
+    margin-bottom: 10px;
+}
+.call-info>span
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Poppins",serif;
+}
+.social-media
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 80px 0;
+}
+.social-media a
+{
+    margin: 0 10px;
+}
+.social-media a i
+{
+    font-size: 1.5rem;
+    color: #000;
+    transition: all 0.4s;
+}
+.social-media a i:hover
+{
+    color: rgb(130, 124, 124);
+}
+
+/* contact section code ends here */
+
+/* footer section code is from here */
+#footer
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+    padding: 4vw 4vw 0vw 2vw;
+    background-color: rgb(52, 52, 52);
+}
+.footer-title>.footer-logo
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-title>.footer-logo>.span-1
+{
+    color: rgb(149, 56, 72);
+    letter-spacing: 1px;
+}
+.footer-title>.footer-logo>.span-2
+{
+    color: rgb(182, 59, 151);
+}
+.footer-title>p
+{
+    font-size: 15px;
+    color: #fff;
+    width: 50%;
+}
+/* footer navigation links */
+.footer-navigation-links>ul>li
+{
+    padding: 5px 0;
+}
+.footer-navigation-links>ul>li>a
+{
+    color: white;
+    transition: all 0.4s;
+}
+.footer-navigation-links>ul>li>a:hover
+{
+    color: rgb(206, 197, 197);
+}
+/* footer navigation links */
+/* website privacy policy */
+.policy>ul>li
+{
+    padding: 4px 0;
+}
+.policy>ul>li>a
+{
+    color: #fff;
+    transition: all 0.4s;
+}
+.policy>ul>li>a:hover
+{
+    color: rgb(204, 193, 193);
+}
+/* website privacy policy */
+.footer-social_media
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-social_media>a
+{
+    margin: 3px 0px;
+}
+.footer-social_media>a>i
+{
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.4s;
+}
+.footer-social_media>a>i:hover
+{
+    color: rgba(165, 156, 156, 0.637);
+}
+/* footer section code ends here */
