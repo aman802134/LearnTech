@@ -85,7 +85,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 30px 40px;
-    background: linear-gradient(rgba(9,5,54,0.7),rgba(5,4,46,0.7)),url(/images/bg.jpg);
+    background: linear-gradient(rgba(60, 66, 116, 0.7),rgba(56, 53, 116, 0.7)),url(/images/bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,6 +106,7 @@ body
     font-weight: 300;
     color:#fff;
     margin-top: 15px;
+    text-align: justify;
 }
 .button
 {
@@ -116,13 +117,13 @@ body
     padding: 10px 35px;
     border: 1px solid black;
     border-radius: 4px;
-    font-family: "Poppins",sans-serif;
+    font-family: "ubuntu",sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
 .button a.home_first-btn
 {
-    background-color: rgb(149, 56, 72);
+    background-color: rgb(26, 9, 172);
     color: #fff;
     transition: all 0.5s;
 }
@@ -134,7 +135,7 @@ body
 .button a.home_second-btn
 {
     color: #fff;
-    background-color: rgb(142, 46, 118);
+    background-color: rgb(195, 100, 36);
     transition: all 0.5s;
 }
 .button a.home_second-btn:hover
@@ -148,25 +149,27 @@ body
 {
     padding: 4vw 8vw 0 8vw;
     text-align: center;
-    box-shadow: 0px 0px 10px -2px rgba(142, 46, 118, 0.449);
+    /* box-shadow: 0px 0px 10px -2px rgba(142, 46, 118, 0.449); */
 }
 #features h1
 {
-    font-size: 38px;
-    font-weight: 700;
+    font-family: "ubuntu",sans-serif;
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: 0.8px;
+    color: limegreen;
 }
 #features p
 {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 300;
     color: rgba(0, 0, 0,0.5);
 }
 #features .fea-base
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
 }
 #features .fea-box
 {
@@ -179,12 +182,17 @@ body
 }
 #features .fea-box:hover
 {
-    box-shadow: 0px 0px 10px 8px rgb(224, 188, 213);
+    box-shadow: 0px 0px 30px 2px rgb(255, 156, 8);
 }
-#features .fea-box img
+#features .fea-box svg
 {   
-    width: 40px;
+    width: 55px;
+    height: 55px;
     margin: 10px 0;
+    fill: rgb(243,72,9);
+    border: 2px dotted red;
+    border-radius: 50%;
+    padding: 5px 5px;
 }
 #features .fea-box h3
 {
@@ -208,14 +216,16 @@ body
 }
 #courses h1
 {
-    font-size: 38px;
-    font-weight: 700;
+    font-family: "ubuntu",sans-serif;
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: 0.8px;
+    color: limegreen;
 }
 #courses p
 {
-    font-family: "ubuntu",sans-serif;
-    font-size: 18px;
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
     font-weight: 300;
     color: rgba(0, 0, 0,0.5);
 }
@@ -234,7 +244,7 @@ body
 }
 #courses>.courses-base>.course-box:hover
 {
-    box-shadow: 1px 1px 40px -1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 20px 2px rgb(255, 156, 8);
 }
 .course-box>img
 {
@@ -274,13 +284,13 @@ body
 .course-btn-container a.course-btn
 {
     
-    background-color: rgb(149, 56, 72);
+    background-color: rgb(118, 36, 62);
     color: #fff;
     transition: all 0.5s;
 }
 .course-btn-container a.course-btn:hover
 {
-    color: rgb(149, 56, 72);
+    color: rgb(149, 129, 56);
     background-color: #fff;
 }
 /* courses section code ends here */
@@ -297,32 +307,36 @@ body
 }
 #FAQ-section>.FAQ-title h1
 {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: 2px;
     margin: 5px 0;
-    color: rgba(0, 0, 0,0.9);
+    color: limegreen;
 }
-#FAQ-section>.FAQ-title p
+/* #FAQ-section>.FAQ-title p
 {
     font-size: 20px;
     font-weight: 400;
     color: rgba(0, 0, 0,0.5);
-}
+} */
 .FAQ-area
 {
-    margin: 55px;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 40px;
-    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0,0.5);
-    padding: 40px 40px;
+    gap: 20px;
+    /* box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0,0.5); */
+    padding: 25px 40px;
 }
 .FAQ-area>.FAQ h3 
 {
     font-family: "Poppins",sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: justify;
+    background-color: rgb(243, 202, 187);
+    padding: 10px 10px;
+    border-radius: 4px;
 }
 .FAQ-area>.FAQ p 
 {
@@ -330,6 +344,10 @@ body
     font-weight: 300;
     color: rgba(0, 0, 0,0.8);
     letter-spacing: 1px;
+    text-align: justify;
+    background-color: rgba(247, 196, 158, 0.332);
+    padding: 10px 10px;
+    border-radius: 4px;
 }
 /* FAQ code section ends here */
 
@@ -342,12 +360,13 @@ body
 }
 #contact h1
 {
-    font-size: 35px;
-    font-weight: 700;
+    font-family: "ubuntu",sans-serif;
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: 2px;
     margin: 5px 0;
-    color: rgba(0, 0, 0,0.9);
-    text-transform: uppercase;
+    color:limegreen;
+    /* text-transform: uppercase; */
     margin-bottom: 20px;
 }
 
@@ -356,7 +375,7 @@ body
     display: flex;
     width: 100%;
     border: 1px solid black;
-    background-color: rgba(142, 46, 118, 0.449);
+    background-color: rgb(238, 207, 149);
 }
 /* message area */
 .message-area
@@ -372,6 +391,7 @@ body
     margin: 10px 0;
     font-size: 18px;
     font-family: "Poppins",serif;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -416,7 +436,7 @@ body
 {
     padding: 10px 150px;
     font-size: 20px;
-    font-family: "Poppins",serif;
+    font-family: "ubuntu",sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -437,6 +457,7 @@ body
     margin: 10px 0;
     font-size: 18px;
     font-family: "Poppins",serif;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -449,8 +470,9 @@ body
 }
 .email-info h3
 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Poppins",serif;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .email-info>span
@@ -467,8 +489,9 @@ body
 }
 .call-info h3
 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Poppins",serif;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .call-info>span
@@ -496,7 +519,7 @@ body
 }
 .social-media a i:hover
 {
-    color: rgb(130, 124, 124);
+    color: rgba(245, 25, 186, 0.637);
 }
 
 /* contact section code ends here */
@@ -544,7 +567,7 @@ body
 }
 .footer-navigation-links>ul>li>a:hover
 {
-    color: rgb(206, 197, 197);
+    color: rgba(245, 25, 186, 0.637);
 }
 /* footer navigation links */
 /* website privacy policy */
@@ -559,7 +582,7 @@ body
 }
 .policy>ul>li>a:hover
 {
-    color: rgb(204, 193, 193);
+    color: rgba(245, 25, 186, 0.637);
 }
 /* website privacy policy */
 .footer-social_media
@@ -579,6 +602,6 @@ body
 }
 .footer-social_media>a>i:hover
 {
-    color: rgba(165, 156, 156, 0.637);
+    color: rgba(245, 25, 186, 0.637);
 }
 /* footer section code ends here */
